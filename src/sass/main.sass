@@ -1,0 +1,677 @@
+@import ../sass/_variables.sass
+@import ../sass/fonts
+@import ../sass/media.sass
+@import ../sass/mixins.sass
+
+
+*
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+
+body
+    padding-top: 70px
+    margin: 0
+.container
+    max-width: 1170px
+.container-two
+    max-width: 1540px
+    margin: 0 auto
+.navigation-bar
+    font-family: Lato
+    top: 0
+    height: 70px
+    position: fixed
+    width: 100%
+    background-color: $decoration-color-white
+    z-index: 10
+.navigation-container
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    &__logo
+        margin-right: auto
+        flex-basis: 10%
+        &-img
+            margin-bottom: 0
+    &__list
+        flex-basis: 80%
+        height: 100%
+        & ul
+            flex-wrap: wrap
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            margin: 0
+            padding: 0
+            width: 100%
+            height: 100%
+            & li
+                position: relative
+                display: flex
+                height: 100%
+                justify-content: center
+                align-items: center
+                margin-left: 15px
+                margin-right: 45px
+                &:hover
+                    & ul
+                        display: flex
+                        & ul
+                            display: none
+                & ul
+                    padding-top: 18px
+                    padding-bottom: 13px
+                    padding-left: 2px
+                    border-top: 2px solid #fff200
+                    top: 67px
+                    left: 3px
+                    width: 180px
+                    height: 180px
+                    position: absolute
+                    background-color: $eclipse-section
+                    transition: transform 0.5s ease-in
+                    display: none
+                    & ul
+                        display: none
+                    & li
+                        margin-right: auto
+                        height: 35px
+                        position: relative
+                        width: 100%
+                        &:hover
+                            & ul
+                                display: flex
+                        & ul
+                            position: absolute
+                            top: 0px
+                            left: 163px
+                        & a
+                            display: block
+                            width: 100%
+                            color: $text-color-white
+                            
+                            &:before
+                                position: relative
+                                content: ''
+                                display: inline-block
+                                width: 7px
+                                height: 7px
+                                border-right: 2px solid $text-color-white
+                                border-top: 2px solid $text-color-white
+                                transform: rotate(45deg)
+                                margin-right: 8px
+                            &:hover
+                                color: $text-color-yellow
+                & a
+                    font-family: Lato
+                    color: $text-color-darkGrey
+                    &:hover
+                        text-decoration: none
+                        transition: 0.3s easy-in     
+    &__search
+        margin-top: 5px
+        flex-basis: 10%
+        &-form
+            &-label
+                position: relative
+                & input
+                    border: none
+                    width: 180px
+                    background-color: $decoration-color-light-grey
+                &-button
+                    background-color: inherit
+                    border: none
+                    position: absolute
+                    top: 50%
+                    right: 21px
+                    transform: translateY(-50%)
+                    & i
+                        font-size: 14px
+                        color: $decoration-color-search-grey    
+
+.burger
+    display: none
+    position: fixed
+    top: 25px
+    right: 15px
+    z-index: 15
+    cursor: pointer
+    &__line
+        width: 25px
+        height: 3px
+        background-color: $decoration-color-dark-grey
+        position: relative
+        margin-bottom: 3px
+.nav-active
+    transform: translateX(0%)!important
+    display: flex!important  
+
+
+
+// ---------------------header----------------------
+header
+    position: relative
+    color: $text-color-white
+    @include background-image('../img/bgi.jpg', center, no-repeat, cover)
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        @include bgi-gradient($blue-gradient, $pink-gradient, 0%, 40%)
+.carousel-indicators
+    margin: 0 auto 32px
+    cursor: pointer
+    & li
+        width: 7px
+        height: 7px
+        border-radius: 50%
+.carousel-control-prev
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    & i
+        padding: 20px 25px
+        font-size: 20px
+        background-color: $highlited-section
+.carousel-control-next
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    & i
+        padding: 20px 25px
+        font-size: 20px
+        background-color: $highlited-section
+.header-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding-top: 295px
+    padding-bottom: 325px
+    &__title
+        font-size: 64px
+        text-transform: uppercase
+        font-family: Lato-heavy
+        transform: scale(1.09, 1)
+        line-height: 1.1
+        &:after
+            content: 'Design agency'
+            color: $text-color-yellow
+    &__text
+        margin-top: 15px
+        text-align: center
+        max-width: 700px
+        line-height: 1.95
+        transform: scale(1.08, 1)
+// ---------------------why choose us---------------
+.why-choose-us
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-top: 105px
+    padding-bottom: 115px
+    &__title
+        font-size: 35px
+        text-transform: uppercase
+        text-align: center
+        transform: scale(1.1, 1)
+        &:after
+            content: 'Choose us'
+            color: $text-color-blue
+    &__text
+        font-size: 14px
+        margin-top: 10px
+        margin-bottom: 0px
+        text-align: center
+        max-width: 650px
+        line-height: 1.9
+        color: $text-color-grey
+        transform: scale(1.085, 1)
+.card-wrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 100%
+.card
+    cursor: pointer
+    display: block
+    margin-top: 85px
+    height: 270px
+    width: 200px
+    border: 1px solid $border-color-grey
+    text-align: center
+    position: relative 
+    &:hover
+        & .card-slide
+            display: flex
+    &__icon
+        font-size: 60px
+        text-align: center
+        height: 45%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: $decoration-color-purple
+    &__title
+        text-transform: uppercase
+        font-family: Lato
+        font-size: 14px
+        font-weight: 900
+        margin-top: 20px
+        transform: scale(1.085, 1)
+        color: $text-color-black
+    &__text
+        color: $text-color-grey
+        font-size: 14px
+        margin: 20px auto
+        max-width: 150px
+        transform: scale(1.04, 1)
+        line-height: 1.45
+.card-slide
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 55%
+    z-index: 10
+    background-color: $decoration-color-purple
+    display: none
+    flex-direction: column
+    &__title
+        height: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        text-transform: uppercase
+        & h5
+            margin-top: 2px
+            transform: scale(1.05, 1)
+            & a
+                font-size: 14px
+                color: $text-color-white
+                text-decoration: none
+
+    &__icons
+        display: flex
+        justify-content: center
+        margin-top: 4px
+        &-icon1
+            border: 1px solid $text-color-white
+            margin-right: 18px
+            transform: rotate(90deg)
+            border-radius: 50%
+            height: 35px
+            width: 35px
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+                background-color: $decoration-color-white
+                & a
+                    color: $decoration-color-purple
+            & a
+                color: $text-color-white
+                font-size: 12px
+        &-icon2
+            border: 1px solid $text-color-white
+            border-radius: 50%
+            height: 35px
+            width: 35px
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+                background-color: $decoration-color-white
+                & a
+                    color: $decoration-color-purple
+            & a
+                color: $text-color-white
+                font-size: 12px
+
+
+// ---------------------Our products------------------------
+.our-products
+    position: relative
+    padding-top: 40px
+    text-align: center
+
+    @include background-image('../img/bgi.jpg', bottom, no-repeat, cover)
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        @include bgi-gradient($pink-gradient, $blue-gradient, 60%, 100%) 
+    &__title
+        position: relative
+        color: $text-color-white
+        z-index: 2
+        font-size: 35px
+        text-transform: uppercase
+        text-align: center
+        transform: scale(1.1, 1)
+        &:after
+            content: 'Products'
+            color: $text-color-yellow    
+.our-products-wrapper
+    padding-top: 156px
+    margin-top: 40px
+    position: relative
+    z-index: 3
+    overflow: hidden
+    @include background-image('../img/bgi2.jpg', bottom, no-repeat, cover)
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 53.5% 0, 50% 40px, 46% 0, 0 0)
+.product-unit
+    
+    display: flex
+    &__img
+        width: 145px
+        height: 145px
+        overflow: hidden
+        border-radius: 50%
+        position: relative
+        margin-right: 29px
+        &-figureOne
+            content: ''
+            position: absolute
+            bottom: 68px
+            right: 84px
+            width: 100%
+            height: 100%
+        &-figureTwo
+            content: ''
+            position: absolute
+            bottom: 46px
+            right: 120px
+            width: 100%
+            height: 100%
+        &-figureThree
+            content: ''
+            position: absolute
+            bottom: 84px
+            right: 397px
+            width: 100%
+            height: 100%
+        &-figureFour
+            content: ''
+            position: absolute
+            bottom: 45px
+            right: 230px
+            width: 100%
+            height: 100%
+        &-figureFive
+            content: ''
+            position: absolute
+            bottom: 62px
+            right: 237px
+            width: 100%
+            height: 100%
+        &-figureSix
+            content: ''
+            position: absolute
+            bottom: 138px
+            right: 117px
+            width: 100%
+            height: 100%
+    &__text
+        & h3
+            padding-top: 16px
+            padding-left: 6px
+            font-size: 24px
+            color: $text-color-darkGrey
+            text-transform: uppercase
+            text-align: left
+            font-weight: 700
+            transform: scale(1.13, 1)
+        & h4
+            font-size: 16px
+            color: $text-color-purple
+            text-align: left
+        & p
+            font-size: 14px
+            color: $text-color-grey
+            max-width: 170px
+            text-align: left
+            padding-top: 3px
+            line-height: 1.73
+.buffer
+    margin-top: 100px
+    margin-bottom: 170px
+.second-carousel-indicators
+    margin-bottom: 55px
+    & li
+        background-color: $text-color-grey
+        &.active
+            background-color: $text-color-purple
+// -------------------------------About us---------------------
+.About-us
+    padding-top: 115px
+    padding-bottom: 50px
+    &-text
+        & h2
+            font-size: 35px
+            text-transform: uppercase
+            transform: scale(1.1, 1)
+            margin-left: 25px
+            color: $text-color-middleGrey
+            &:before
+                content: 'About '
+                color: $text-color-blue
+        & p:first-of-type
+            font-size: 14px
+            color: $text-color-grey
+            margin-top: 23px
+            max-width: 520px
+            line-height: 1.7
+            transform: scale(1.08, 1)
+            margin-left: 19px
+        & p:last-of-type
+            font-size: 14px
+            font-weight: 400
+            max-width: 520px
+            transform: scale(1.075, 1)
+            margin-left: 16px
+            margin-top: 48px
+            line-height: 1.7
+            color: $text-color-middleGrey
+.About-us-progress 
+    & ul
+        list-style-type: none
+        padding-left: 5px
+        & li
+            margin-top: 20px
+            & h4
+                text-transform: uppercase
+                font-size: 13px
+                margin-right: 9px
+                color: $text-color-darkGrey
+                font-weight: 600
+    &__title
+        margin-right: 7px
+        &-first
+            padding-top: 47px
+            padding-bottom: 10px
+        &-second
+            padding-top: 20px
+            margin-left: -5px
+            padding-bottom: 10px
+        &-third
+            padding-top: 18px
+            padding-bottom: 10px
+        &-fourth
+            padding-top: 19px
+            padding-bottom: 10px
+    &__bar
+        display: block
+        height: 8px
+        border: 1px solid $border-color-grey
+        position: relative
+        margin-right: 7px
+        &-unit
+            position: absolute
+            top: 50%
+            left: 3px
+            transform: translateY(-50%)
+            width: 0%
+            background-color: $text-color-blue
+            height: 3px
+            float: left
+            transition: 2s
+.About-us-progress__percentage
+    float: right
+.ipad-wrapper
+    height: 100%
+    & figure
+        height: 100%
+        display: flex
+        justify-content: flex-end
+        padding-right: 5px
+        align-items: flex-end
+// -----------------------------------Get in touch----------------
+.get-in-touch
+    padding-top: 132px
+    &__text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &-title
+            text-transform: uppercase
+            text-align: center
+            font-size: 35px
+            font-weight: 600
+            transform: scale(1.12, 1)
+            &:after
+                content: ' touch'
+                color: $text-color-blue
+        &-paragraph
+            max-width: 680px
+            text-align: center
+            font-size: 14px
+            transform: scale(1.075, 1)
+            margin-top: 15px
+.get-in-touch__form-contacts
+    margin-top: 67px
+    position: relative
+    padding-top: 98px
+    padding-bottom: 100px
+.get-in-touch-wrapper
+    padding-bottom: 82px
+    width: 100%
+    position: relative
+    z-index: 2
+    background-color: $eclipse-section
+    padding-top: 83px
+    padding-left: 67px
+    font-size: 16px
+    display: flex
+    flex-direction: row
+.form-wrapper
+    width: 56%
+.top-form
+    display: flex
+    margin-bottom: 14px
+    &__input
+        padding: 10px 45px 12px 17px
+        margin-right: 14px
+        background-color: transparent
+        border: 1px solid $border-color-grey-for-form
+        color:  $text-color-white
+.middle-form
+    &__textarea
+          padding: 10px 312px 85px 20px
+          background-color: transparent
+          color: $text-color-white
+.bottom-form
+    display: flex
+    justify-content: space-between
+    padding-top: 9px
+    &__label
+        display: block
+        position: relative
+        padding-left: 25px
+        margin-bottom: 12px
+        cursor: pointer
+        user-select: none
+    &__btn
+        background-color: $decoration-color-yellow
+        border: none
+        padding: 12px 42px
+        margin-right: 2px
+.check-text
+    color: $text-color-grey-for-form
+    position: absolute
+    top: 17px
+    left: 35px
+    width: 200px
+.contacts-wrapper
+    width: 44%
+    height: 100%
+    color: $text-color-white
+    display: flex
+    flex-direction: column
+    padding-left: 90px
+    &__address
+        margin-top: -8px
+        max-width: 200px
+    &__phones
+        margin-top: 10px
+        & ul
+            list-style-type: none
+            padding-left: 4px
+            transform: scale(1.02, 1)
+            & li
+                & a
+                    color: $text-color-white
+    &__emails
+        margin-top: 7px
+        & ul
+            list-style-type: none
+            padding-left: 4px
+            transform: scale(1.02, 1)
+            & li
+                & a
+                    color: $text-color-white
+#map
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+// -----------------------------------footer--------------
+footer
+    background-color: $decoration-color-dark-grey
+.footer-wrapper
+    height: 70px
+    padding-top: 9px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    color: white
+    &__text
+        margin-left: 13px
+        margin-bottom: 5px
+        & p
+            transform: scale(1.06, 1)
+    & ul
+        margin: 0
+        & li
+            display: inline-block
+            & a
+                & figure
+                    & img
+                        margin-bottom: 2px
+                        height: 20px
+                        padding-left: 17px
+                        

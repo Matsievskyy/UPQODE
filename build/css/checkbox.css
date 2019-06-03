@@ -1,0 +1,50 @@
+.bottom-form__cheackbox{
+	display: block;
+	position: relative;
+	padding-left: 25px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	user-select: none;
+}
+.bottom-form__cheackbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.check{
+	position: absolute;
+	top: 18px;
+	left: 0;
+	height: 25px;
+	width: 25px;
+    background-color: inherit;
+    border: 1px solid #9b9b9b;
+	border-radius: 2px;
+}
+
+
+
+.check:after{
+	content:"";
+	position: absolute;
+	display: none;
+}
+
+.bottom-form__cheackbox input:checked ~ .check:after {
+  display: block;
+}
+
+.bottom-form__cheackbox .check:after {
+  left: 6px;
+  top: 1px;
+  width: 10px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

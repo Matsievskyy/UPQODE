@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./build/css/styles.css">
+    <link rel="stylesheet" href="./build/css/checkbox.css">
+
+</head>
+
+<body>
+    <div class="burger" id="burger">
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+    </div>
+    <nav class="navigation-bar" id="navigation-bar">
+
+        <div class="container navigation-container">
+            <div class="navigation-container__logo">
+                <figure class="navigation-container__logo-img">
+                    <a href=""><img src="./build/img/upqode.jpg" alt="logo"></a>
+                </figure>
+            </div>
+
+            <div class="navigation-container__list">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li ><a href="#products" >Products</a>
+                        <ul id="menu-one">
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#" id="active-item">Shoes</a>
+                                <ul id="menu-two">
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                    <li><a href="#">Men shoes</a></li>
+                                    <li><a href="#">Item 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Item 4</a></li>
+                        </ul>
+                    </li>
+                    <li id="about"><a href="#aboutUs">About</a></li>
+                    <li id="contacts"><a href="#contacts-form">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="navigation-container__search">
+                <form class="navigation-container__search-form" action="#">
+                    <label class="navigation-container__search-form-label">
+                        <input type="text" placeholder="" name="search">
+                        <button class="navigation-container__search-form-label-button" type="submit"><i
+                                class="fa fa-search"></i></button>
+                    </label>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+    <header class="header" id="home">
+        <div class="container-two">
+            <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item">
+                        <div class="header-wrapper container">
+                            <h1 class="header-wrapper__title">Creative </h1>
+                            <p class="header-wrapper__text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                                venenatis
+                                vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus
+                                porttitor.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item  active">
+                        <div class="header-wrapper container">
+                            <h1 class="header-wrapper__title">Creative </h1>
+                            <p class="header-wrapper__text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                                venenatis
+                                vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus
+                                porttitor.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="header-wrapper container">
+                            <h1 class="header-wrapper__title">Creative </h1>
+                            <p class="header-wrapper__text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                                venenatis
+                                vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus
+                                porttitor.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <ol class="carousel-indicators">
+                    <li data-target="#headerCarousel" data-slide-to="0"></li>
+                    <li data-target="#headerCarousel" data-slide-to="1" class="active"></li>
+                    <li data-target="#headerCarousel" data-slide-to="2"></li>
+                </ol>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="why-choose-us container">
+            <h2 class="why-choose-us__title">Why </h2>
+            <p class="why-choose-us__text">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut
+                euismod quam nisi quis felis.
+                Nullam at scelerisque tellus mattis volutpat rhoncus,</p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card__icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <h4 class="card__title">Your title</h4>
+                    <p class="card__text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                    <div class="card-slide">
+                        <div class="card-slide__title">
+                            <h5><a href="#">See more</a></h5>
+                        </div>
+                        <div class="card-slide__icons">
+                            <div class="card-slide__icons-icon1">
+                                <a href="#">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="card-slide__icons-icon2">
+                                <a href="#">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__icon">
+                        <i class="far fa-comment-dots"></i>
+                    </div>
+                    <h4 class="card__title">Your title</h4>
+                    <p class="card__text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                    <div class="card-slide">
+                        <div class="card-slide__title">
+                            <h5><a href="#">See more</a></h5>
+                        </div>
+                        <div class="card-slide__icons">
+                            <div class="card-slide__icons-icon1">
+                                <a href="#">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="card-slide__icons-icon2">
+                                <a href="#">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h4 class="card__title">Your title</h4>
+                    <p class="card__text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                    <div class="card-slide">
+                        <div class="card-slide__title">
+                            <h5><a href="#">See more</a></h5>
+                        </div>
+                        <div class="card-slide__icons">
+                            <div class="card-slide__icons-icon1">
+                                <a href="#">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="card-slide__icons-icon2">
+                                <a href="#">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__icon">
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4 class="card__title">Your title</h4>
+                    <p class="card__text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                    <div class="card-slide">
+                        <div class="card-slide__title">
+                            <h5><a href="#">See more</a></h5>
+                        </div>
+                        <div class="card-slide__icons">
+                            <div class="card-slide__icons-icon1">
+                                <a href="#">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="card-slide__icons-icon2">
+                                <a href="#">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__icon">
+                        <i class="far fa-flag"></i>
+                    </div>
+                    <h4 class="card__title">Your title</h4>
+                    <p class="card__text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                    <div class="card-slide">
+                        <div class="card-slide__title">
+                            <h5><a href="#">See more</a></h5>
+                        </div>
+                        <div class="card-slide__icons">
+                            <div class="card-slide__icons-icon1">
+                                <a href="#">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="card-slide__icons-icon2">
+                                <a href="#">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-products" id="products">
+            <div id="secondCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item">
+                        <h2 class="our-products__title container">Our </h2>
+                        <div class="our-products-wrapper">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xl-4 align-items">
+                                        <div class="product-unit justify-content-md-center align-items">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureOne">
+                                                    <a href="#"><img src="./build/img/Layer-23.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                        <div class="product-unit buffer justify-content-md-center">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureFour">
+                                                    <a href="#"><img src="./build/img/Layer-6.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-4 align-items">
+                                        <div class="product-unit justify-content-md-center align-items">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureTwo">
+                                                    <a href="#"><img src="./build/img/Layer-3.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                        <div class="product-unit buffer justify-content-md-center">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureFive">
+                                                    <a href="#"><img src="./build/img/Layer-5.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-12 col-xl-4 justify-items align-items">
+                                        <div class="product-unit">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureThree">
+                                                    <a href="#"><img src="./build/img/Layer-1.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                        <div class="product-unit buffer ">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureSix">
+                                                    <a href="#"><img src="./build/img/Layer-4.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text ">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <h2 class="our-products__title container">Our </h2>
+                        <div class="our-products-wrapper">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xl-4 align-items">
+                                        <div class="product-unit justify-content-md-center align-items">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureOne">
+                                                    <a href="#"><img src="./build/img/Layer-23.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                        <div class="product-unit buffer justify-content-md-center">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureFour">
+                                                    <a href="#"><img src="./build/img/Layer-6.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-4 align-items">
+                                        <div class="product-unit justify-content-md-center align-items">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureTwo">
+                                                    <a href="#"><img src="./build/img/Layer-3.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                        <div class="product-unit buffer justify-content-md-center">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureFive">
+                                                    <a href="#"><img src="./build/img/Layer-5.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-12 col-xl-4 justify-items align-items">
+                                        <div class="product-unit">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureThree">
+                                                    <a href="#"><img src="./build/img/Layer-1.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                        <div class="product-unit buffer ">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureSix">
+                                                    <a href="#"><img src="./build/img/Layer-4.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text ">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="our-products__title container">Our </h2>
+                        <div class="our-products-wrapper">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xl-4 align-items">
+                                        <div class="product-unit justify-content-md-center align-items">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureOne">
+                                                    <a href="#"><img src="./build/img/Layer-23.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                        <div class="product-unit buffer justify-content-md-center">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureFour">
+                                                    <a href="#"><img src="./build/img/Layer-6.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-4 align-items">
+                                        <div class="product-unit justify-content-md-center align-items">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureTwo">
+                                                    <a href="#"><img src="./build/img/Layer-3.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                        <div class="product-unit buffer justify-content-md-center">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureFive">
+                                                    <a href="#"><img src="./build/img/Layer-5.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-12 col-xl-4 justify-items align-items">
+                                        <div class="product-unit">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureThree">
+                                                    <a href="#"><img src="./build/img/Layer-1.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                        <div class="product-unit buffer ">
+                                            <div class="product-unit__img">
+                                                <figure class="product-unit__img-figureSix">
+                                                    <a href="#"><img src="./build/img/Layer-4.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="product-unit__text ">
+                                                <h3>Title</h3>
+                                                <h4>Best Product</h4>
+                                                <p>Duis bibendum diam non erat facilaisis en ter </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ol class="carousel-indicators second-carousel-indicators">
+                    <li data-target="#secondCarousel" data-slide-to="0"></li>
+                    <li data-target="#secondCarousel" data-slide-to="1" class="active"></li>
+                    <li data-target="#secondCarousel" data-slide-to="2"></li>
+                </ol>
+            </div>
+        </section>
+        <section class="About-us" id="aboutUs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="About-us-text">
+                            <h2>us</h2>
+                            <p>Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euism
+                                Nullam at scelerisque tellus mattis volutpat rhoncus,</p>
+                            <p>Nullam at scelerisque tellus. Nulla feugiat iaculis ante, non tincidunt ligula
+                                scelerisque a.
+                                Vestibulum accumsan tincidunt odio vel finibus. Phasellus vestibulum lobortis ligula ut
+                                volutpat. Maecenas vitae nibh vel purus mollis semper. Nullam tempus feugiat mi id
+                                semper.
+                                Pellentesque ac posuere augue, vitae mollis enim. Etiam et ullamcorper dolor, a
+                                hendrerit
+                                quam. </p>
+                        </div>
+                        <div class="About-us-progress">
+                            <ul>
+                                <li>
+                                    <h4 class="About-us-progress__title-first">Photoshop<span
+                                            class="About-us-progress__percentage">79&#37;</span></h4><span
+                                        class="About-us-progress__bar"><span
+                                            class="About-us-progress__bar-unit"></span></span>
+                                </li>
+                                <li>
+                                    <h4 class="About-us-progress__title-second">Html5&#47;Css<span
+                                            class="About-us-progress__percentage">90&#37;</span></h4><span
+                                        class="About-us-progress__bar"><span
+                                            class="About-us-progress__bar-unit"></span></span>
+                                </li>
+                                <li>
+                                    <h4 class="About-us-progress__title-third">Javascript<span
+                                            class="About-us-progress__percentage">69&#37;</span></h4><span
+                                        class="About-us-progress__bar"><span
+                                            class="About-us-progress__bar-unit"></span></span>
+                                </li>
+                                <li>
+                                    <h4 class="About-us-progress__title-fourth">Wordpress<span
+                                            class="About-us-progress__percentage">92&#37;</span></h4><span
+                                        class="About-us-progress__bar"><span
+                                            class="About-us-progress__bar-unit"></span></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ipad-wrapper">
+                            <figure>
+                                <img src="./build/img/ipad-mockup.png" alt="ipad">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="get-in-touch" id="contacts-form" >
+            <div class="get-in-touch__text container">
+                <h2 class="get-in-touch__text-title">get in</h2>
+                <p class="get-in-touch__text-paragraph">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est
+                    congue nibh, ut euismod quam nisi quis felis.
+                    Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+            </div>
+            <div class="get-in-touch__form-contacts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-10">
+                            <div class="get-in-touch-wrapper">
+                                <div class="form-wrapper">
+                                    <form action="#" method="GET" autocomplete="on" >
+                                        <div class="top-form">
+                                            <div class="inner-form">
+                                                <input type="text" required="required" placeholder="Full Name" class="top-form__input">
+                                            </div>
+                                            <div class="inner-form">
+                                                <input type="email" required="required" placeholder="E&#8208;mail Adress"
+                                                    class="top-form__input">
+                                            </div>
+                                        </div>
+                                        <div class="middle-form">
+                                            <div class="inner-form">
+                                                <textarea name="comment" required="required" id="textarea" placeholder="Message required"
+                                                    class="middle-form__textarea"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-form">
+                                            <div class="inner-form">
+                                                <label class="bottom-form__cheackbox">
+                                                    <input  type="checkbox" name="check" value="company"
+                                                        class="bottom-form__checkbox">
+                                                    <span class="check"></span>
+                                                    <span class="check-text">I like your company</span>
+                                                </label>
+                                            </div>
+                                            <div class="inner-form">
+                                                <input type="submit" class="bottom-form__btn" value="Submit">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="contacts-wrapper">
+                                    <div class="contacts-wrapper__address">
+                                        <p>69/A, Some Street Name
+                                            Your City, code 01234
+                                            Country Name</p>
+                                    </div>
+                                    <div class="contacts-wrapper__phones">
+                                        <ul>
+                                            <li><a href="tel:+8801234567898" target="_blank">&plus;880 123 456 78 98</a>
+                                            </li>
+                                            <li><a href="tel:+8609876487495" target="_blank">&plus;860 987 648 74 95</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="contacts-wrapper__emails">
+                                        <ul>
+                                            <li><a href="mailto:company@mail.com">company&commat;mail&period;com</a>
+                                            </li>
+                                            <li><a href="mailto:sales@mail.com">sales&commat;mail&period;com</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+                </div>
+                <div class="map" id="map"></div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container-two">
+            <div class="footer-wrapper">
+                <div class="footer-wrapper__text">
+                    <p>Copyright &#169; Company&#46; All rights Reserved 2016</p>
+                </div>
+                <div class="footer-wrapper__social">
+                    <ul>
+                        <li><a href="#">
+                                <figure><img src="./build/img/facebook_S.png" alt="facebook"></figure>
+                            </a></li>
+                        <li><a href="#">
+                                <figure><img src="./build/img/googleplus_S.png" alt="google plus"></figure>
+                            </a></li>
+                        <li><a href="#">
+                                <figure><img src="./build/img/twitter_S.png" alt="twitter"></figure>
+                            </a></li>
+                        <li><a href="#">
+                                <figure><img src="./build/img/dribbble_S.png" alt=""></figure>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCst84bOfHTR-rQvgB8zrv5WA_dviNRQsM&callback=initMap"
+        async defer></script>
+    <script src="./build/js/scripts.js"></script>
+</body>
+
+</html>
